@@ -4,26 +4,37 @@
 To implement the RSA algorithm to securely encrypt and decrypt messages
 using public and private keys.
 ## ALGORITHM:
-Step 1: Get two distinct prime numbers `p` and `q` from the user or predefine
-them.
+
+Step 1: Get two distinct prime numbers `p` and `q` from the user or predefine them.
+
 Step 2: Calculate the modulus `n` by multiplying `p` and `q`: n=p*q.
+
 Step 3: Calculate Euler’s Totient function φ(n): φ(n) = (p-1) * (q-1).
+
 Step 4: Choose a public exponent `e` such that: 1 < e < φ(n) = 1 and gcd(e,
 φ(n)) = 1(ensure e is coprime with φ(n)).
+
 Step 5: Calculate the private key `d` as the modular inverse of `e` modulo
 φ(n): d . e ≡ 1(mod φ(n)).
+
 Step 6: Formulate the public key as the pair `(e, n)` and the private key as the
 pair `(d, n)`.
+
 Step 7: Ask the user for an alphabetic message to encrypt.
-Step 8: Convert each character in the message to its ASCII value.
-Step 9: Encrypt each ASCII value using the formula: C=M^e mod n
+
+Step 8: Encrypt each ASCII value using the formula: C=M^e mod n
 (where `M` is the ASCII value and `C` is the ciphertext).
-Step 10: Decrypt each ciphertext using the formula: M=C^d mod n
+
+Step 9: Decrypt each ciphertext using the formula: M=C^d mod n
 (where `C` is the ciphertext and `M` is the decrypted ASCII value).
-Step 11: Convert the decrypted ASCII values back to characters to retrieve the
+
+Step 10: Convert the decrypted ASCII values back to characters to retrieve the
 original message.
-Step 12: Print the encrypted message and the decrypted message.
-Step 13: End the program.
+
+Step 11: Print the encrypted message and the decrypted message.
+
+Step 12: End the program.
+
 ## PROGRAM:
 ```
 #include <stdio.h>
@@ -130,7 +141,8 @@ int main() {
 
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/bdca7381-d68d-4a15-baea-faebfa03fb42)
+![image](https://github.com/user-attachments/assets/8653ac1b-c982-4a48-a7b1-c1704aecb93b)
+
 
 
 ## RESULT : -
